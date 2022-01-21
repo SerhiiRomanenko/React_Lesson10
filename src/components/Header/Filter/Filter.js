@@ -45,23 +45,17 @@ export function Filter(props) {
   return <div className="header__filter">
     <form className="header__filterForm"
           onSubmit={(event) => handleSubmit(event)}>
-      {/*<Input color={"primary"}*/}
-      {/*       className="header__filterInputForSearch"*/}
-      {/*       type="text"*/}
-      {/*       ref={inputValue}*/}
-      {/*       style={{color: 'white'}}*/}
-      {/*       placeholder="Enter text to find it!"/>*/}
-
       <TextField id="outlined-basic" label="Enter text to find it!" variant="outlined" color={"primary"}
                  className="header__filterInputForSearch"
                  type="text"
                  ref={inputValue}
-                 size="small" style={{color: 'white'}}/>
+                 size="small"
+                 sx={{color: 'white', marginRight: '10px'}}/>
 
       <Button  variant="contained"
                type='submit'
                className="header__filterButton"
-               style={{color: 'white'}}>
+               sx={{color: 'white', marginRight: '10px'}}>
         Search
       </Button>
 

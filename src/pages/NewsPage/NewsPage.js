@@ -54,7 +54,7 @@ export function NewsPage() {
   //------------------------------------------------------RETURN-------------------------------------------//
 
   return (
-    <>
+    <div className='newsPage'>
       <Header
         setSearchText={setSearchText}
         setSearchAuthor={setSearchAuthor}
@@ -66,6 +66,6 @@ export function NewsPage() {
         <Main newsToRender={newsToRender} delNews={delNews} />
       )}
       <Footer />
-    </>
+    </div>
   );
 }
