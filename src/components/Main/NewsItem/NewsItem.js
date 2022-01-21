@@ -1,9 +1,8 @@
 import React from "react";
 import faker from "faker";
 import "./NewsItem.scss";
-import {Tooltip, IconButton, Typography, Card, CardMedia, CardContent, CardActions } from "@mui/material";
+import {Tooltip, IconButton, Typography, Card, CardMedia, CardContent } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
-import {theme} from "../../../services/theme";
 
 export function NewsItem(props) {
 

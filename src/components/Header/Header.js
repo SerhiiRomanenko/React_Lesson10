@@ -22,7 +22,7 @@ export function Header(props) {
         <Typography variant="h2" component="h2">
           Breaking News
         </Typography>
-        </a>
+      </a>
 
     </div>
 
