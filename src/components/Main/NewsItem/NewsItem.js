@@ -20,15 +20,19 @@ export function NewsItem(props) {
       width="300px"
       title="photo"
     />
-    <CardContent sx={{padding: "0"}}>
+    <CardContent sx={{padding: "0"}} >
 
-      <Typography gutterBottom variant="h5"
+      <Typography gutterBottom
+                  variant="h5"
                   component="p"
-                  className="news__title">
+                  className="news__title" color={"primary"}>
         {news.title}
       </Typography>
 
-      <Typography gutterBottom variant="h6" className="news__text">
+      <Typography gutterBottom
+                  variant="h6"
+                  className="news__text"
+                  color={"secondary"}>
         <b>Text: </b>
         {news.text}
       </Typography>
@@ -54,7 +58,7 @@ export function NewsItem(props) {
         })}
       </p>
 
-      <Tooltip title="Delete">
+      <Tooltip title="Delete" color={"primary"}>
         <IconButton>
           <DeleteIcon />
         </IconButton>
